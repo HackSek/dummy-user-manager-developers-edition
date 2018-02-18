@@ -1,0 +1,10 @@
+<br><br> {{#if error}}
+<h3 style="text-align:center">{{error}}</h3> {{/if}}
+<form class="row" method="POST" action="/user/search">
+  <div class="input-field col s9">
+    <input type="text" class="validate" name="id" placeholder="Type the username of the person you're looking for">
+  </div>
+  <div class="input-field col s3">
+    <input class="btn waves-effect waves-light" type="submit" value="Search">
+  </div>
+</form>

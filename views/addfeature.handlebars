@@ -1,0 +1,35 @@
+<br>
+<br> {{#if error}}
+<h3 style="text-align:center">{{error}}</h3> {{/if}}
+<form method="POST" action="/user/add">
+  <div class="row">
+    <div class="input-field col s12">
+      <input placeholder="Enter an ID for the user" name="id" type="text" class="validate">
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input placeholder="Enter the user's first name" name="first_name" type="text" class="validate">
+    </div>
+    <div class="input-field col s6">
+      <input placeholder="Enter the user's last name" name="last_name" type="text" class="validate">
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input placeholder="Enter the user's E-mail" name="email" type="text" class="validate">
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input placeholder="Enter the user's StackOverflow's link" name="so_link" type="text" class="validate">
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input placeholder="Enter the user's github link" name="github_link" type="text" class="validate">
+    </div>
+  </div>
+  <input class="btn waves-effect waves-light" type="submit" value="Add">
+</form>
+COPY TO CLIPBOARD SELECT ALL

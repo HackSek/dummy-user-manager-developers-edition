@@ -1,0 +1,19 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "dummy user management app",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "Hachem",
+  "license": "ISC"
+}

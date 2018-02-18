@@ -1,0 +1,14 @@
+<ul class="collection with-header">
+  <li class="collection-header">
+    <h4>{{user.first_name}} {{user.last_name}} <code class="right">@{{user.id}}</code></h4>
+  </li>
+  <li class="collection-item"><strong>E-mail </strong>{{user.email}}</li>
+  <li class="collection-item"><strong><a href={{user.so_link}}> Stack Overflow</a></strong></li>
+  <li class="collection-item"><strong><a href={{user.github_link}}> Github</a></strong></li>
+</ul>
+<div class="row">
+  <a href="/" class="btn waves-effect waves-light col s3" style="margin-left: 20px">Back</a>
+  <form method="POST" action="/user/delete/{{user.id}}?_MET=DELETE">
+    <input class="btn waves-effect waves-light col s3" type="submit" value="Delete" style="background-color: red !important;margin-left: 20px">
+  </form>
+</div>
